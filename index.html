@@ -10,6 +10,7 @@
 
   gtag('config', 'AW-17044983718');
 </script>
+<!-- Event snippet for Clic pentru apelare (2) conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-17044983718/VY4VCJirzoEcEKaf178_', 'value': 1.0, 'currency': 'RON', 'event_callback': callback }); return false; } </script>
 <link rel="icon" type="image/png" href="imagini/logogoogle.png">
 <meta property="og:image" content="https://arteethcluj.ro/images/logogoogle.png"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta charset="UTF-8">
@@ -48,11 +49,12 @@
 
     <div class="hero-overlay"></div>
 
-    <a href="tel:+40773988959" class="urgenta-corner">Servicii de urgență</a>
-    <div class="hero-content">
-        <h1>Zâmbetul tău, <br><i>arta noastră!</i></h1>
-        <div class="hero-buttons-centered">
-            <a href="tel:+40773988959" class="btn-primary"> Programează-te: 0773 988 959</a>
+   <a href="tel:+40773988959" class="urgenta-corner" onclick="return gtag_report_conversion('tel:+40773988959');">Servicii de urgență</a>
+
+<div class="hero-content">
+    <h1>Zâmbetul tău, <br><i>arta noastră!</i></h1>
+    <div class="hero-buttons-centered">
+        <a href="tel:+40773988959" class="btn-primary" onclick="return gtag_report_conversion('tel:+40773988959');"> Programează-te: 0773 988 959</a>
         </div>
     </div>
 </section>

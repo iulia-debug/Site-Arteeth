@@ -10,6 +10,7 @@
 
   gtag('config', 'AW-17044983718');
 </script>
+<!-- Event snippet for Clic pentru apelare (2) conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-17044983718/VY4VCJirzoEcEKaf178_', 'value': 1.0, 'currency': 'RON', 'event_callback': callback }); return false; } </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +46,7 @@
         <div class="container contact-container">
             <div class="contact-info">
                 <h2>Contactează-ne</h2>
-                <p><strong>📞 Telefon:</strong> <a href="tel:+40773988959" class="phone-link">+40 773 988 959</a></p>
+                <p><strong>📞 Telefon:</strong> <a href="tel:+40773988959" class="phone-link" onclick="return gtag_report_conversion('tel:+40773988959');">+40 773 988 959</a></p>
                 <p><strong>📧 Email:</strong> <a href="mailto:arteethcluj@gmail.com" class="email-link">arteethcluj@gmail.com</a></p>
                 <p><strong>📍 Adresă:</strong> Str. Bună Ziua, nr. 41B, bl. M7D, Cluj-Napoca</p>
                 <div class="social-icons">
@@ -82,7 +83,7 @@
         <span class="inchide-modal">×</span>
         <h3>Alege metoda de programare:</h3>
         <div class="butoane-contact">
-            <a href="tel:+40773988959" class="opt-btn apel"><i class="fas fa-phone-alt"></i> Apel</a>
+            <a href="tel:+40773988959" class="opt-btn apel" onclick="return gtag_report_conversion('tel:+40773988959');"><i class="fas fa-phone-alt"></i> Apel</a>
             <a href="https://wa.me/40773988959" target="_blank" class="opt-btn whatsapp"><i class="fab fa-whatsapp"></i> Mesaj WhatsApp</a>
         </div>
     </div>
